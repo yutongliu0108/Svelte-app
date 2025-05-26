@@ -119,3 +119,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* 确保图片不会超出容器 */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .flex-col {
+    flex-direction: column;
+  }
+}
